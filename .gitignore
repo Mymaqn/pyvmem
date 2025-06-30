@@ -1,0 +1,4 @@
+build
+pyvmem/__pycache__
+pyvmem.egg-info
+
