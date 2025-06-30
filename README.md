@@ -26,3 +26,9 @@ print(hex(a.read_u64(0x404000))) # Output: 0x4141414141414141
 a[0x404000:] = b'C'*8 #Overwrites the first 8 A's with C's instead
 print(a[0x404000:0x404008]) #Output: b'CCCCCCCC'
 ```
+### What is it for?
+I sometimes have to emulate functions with a lot of memory values being thrown around along with pointer arithmetics.
+
+Very often when I had this problem I wish a tool like this existed, which just allowed me to treat a list like a virtual memory map. So I made it.
+
+This has helped me countless times in not only emulating C based functions when reversing, but also just makes /proc/pid/mem and /proc/pid/maps files and dumps a lot easier to work with.
