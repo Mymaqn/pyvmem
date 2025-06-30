@@ -32,3 +32,14 @@ I sometimes have to emulate functions with a lot of memory values being thrown a
 Very often when I had this problem I wish a tool like this existed, which just allowed me to treat a list like a virtual memory map. So I made it.
 
 This has helped me countless times in not only emulating C based functions when reversing, but also just makes /proc/pid/mem and /proc/pid/maps files and dumps a lot easier to work with.
+
+### Installation
+
+Clone the repository with `git clone https://github.com/Mymaqn/pyvmem.git`
+Then change directory into it and install it with pip:
+```bash
+cd pyvmem
+pip3 install .
+```
+
+pyvmem has no requirements or dependencies, but has only been tested on python version 3.12 and up. However, very likely it works from version 3.8 and up. If you test it on any other version, please let me know the result
